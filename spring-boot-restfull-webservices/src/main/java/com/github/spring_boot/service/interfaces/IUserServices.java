@@ -1,18 +1,18 @@
 package com.github.spring_boot.service.interfaces;
 
-import com.github.spring_boot.entity.User;
+import com.github.spring_boot.dto.UserDto;
 
 import java.util.List;
 
 public interface IUserServices {
 
-    User getUserById(long id);
+    UserDto getUserById(long id);
 
-    List<User> getAllUsers();
+    List<UserDto> getAllUsers();
 
-    User createUser(User user);
+    UserDto createUser(UserDto userDto);
 
-    User updateUser(User user);
+    UserDto updateUser(UserDto userDto);
 
     void deleteUser(long id);
 }
